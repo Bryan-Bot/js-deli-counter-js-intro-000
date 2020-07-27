@@ -24,11 +24,11 @@ function currentLine(katzDeliLine) {
       var name = katzDeliLine[i];
 
       if (i === katzDeliLine.length - 1) {
+        //compares the value of i to the length
+        //-1 is to aviod the last undefined element in the array
         string.push(spot + ". " + name);
       } else {
         string.push(spot + ". " + name + ",");
       }
     }
-    return string.join(" ");
-  }
-}
+  
